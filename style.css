@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Mukta:wght@300;400&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(245, 205, 212, 0.90);
+}
+
+.container {
+    width: 420px;
+    height: 80vh;
+    background-color: rgba(255, 200, 152, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 50px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* Form */
+form {
+    width: 85%;
+}
+
+.form-group {
+    height: 50px;
+}
+
+label {
+    position: relative;
+    bottom: 1px;
+}
+
+input {
+    width: 65%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+input:invalid {
+    border: 1px solid red;
+}
+
+button {
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+    background: black;
+    border: none;
+    border-radius: 5px;
+    height: 50px; 
+    width: 100%;
+    font-family: Cairo, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    outline: 1.5 px solid black;
+    outline-offset: .2rem;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+button:focus {
+    outline: none;
+}
